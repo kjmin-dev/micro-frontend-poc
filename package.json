@@ -1,0 +1,21 @@
+{
+  "name": "micro-frontend-poc",
+  "version": "0.0.0",
+  "description": "Simple PoC of Microfrontend architecture",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "pnpm  --parallel --filter \"./**\" start",
+    "dev": "pnpm  --parallel --filter \"./**\" dev",
+    "build": "pnpm  --parallel --filter \"./**\" build",
+    "test": "pnpm  --parallel --filter \"./**\" test"
+  },
+  "keywords": [],
+  "author": "Kyoungjun Min <kjmin.kr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.3.0"
+  }
+}
